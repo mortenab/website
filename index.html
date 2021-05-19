@@ -1,8 +1,45 @@
 <html>
   <head>
-    <title>Emorten.dk</title>
+    <title>Morten's personal website</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      a {
+        color: white;
+      }
+
+      .blink {
+        animation: blinker 2s linear infinite;
+      }
+
+      .green {
+        color: yellowgreen;
+      }
+
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello world</h1>
+    <h1><span class="green">$</span> morten<span class="blink">_</span></h1>
+    <p>
+      <a href="https://github.com/mortenab" target="_blank">GitHub</a>
+    </p>
+    <p>
+      <a
+        href="https://www.linkedin.com/in/morten-bentsen-3a50a74"
+        target="_blank"
+        >LinkedIn</a
+      >
+    </p>
   </body>
 </html>
