@@ -14,6 +14,10 @@
         font-size: 14px;
       }
 
+      p {
+        padding-left: 50px;
+      }
+
       a {
         color: white;
       }
@@ -26,24 +30,64 @@
         color: yellowgreen;
       }
 
+      .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .links > div {
+        margin: 20px;
+      }
+
       @keyframes blinker {
         50% {
           opacity: 0;
         }
       }
+
+      div.footer {
+        padding-top: 100px;
+        font-size: 11px;
+        display: flex;
+        justify-content: center;
+      }
     </style>
   </head>
   <body>
     <h1><span class="green">$</span> morten<span class="blink">_</span></h1>
-    <p>
-      <a href="https://github.com/mortenab" target="_blank">GitHub</a>
-    </p>
-    <p>
-      <a
-        href="https://www.linkedin.com/in/morten-bentsen-3a50a74"
-        target="_blank"
-        >LinkedIn</a
-      >
-    </p>
+    <div class="links">
+      <div>
+        <a href="https://github.com/mortenab" target="_blank"
+          ><img
+            src="img/github-inverted.png"
+            width="50"
+            height="50"
+            alt="GitHub profile"
+        /></a>
+      </div>
+      <div>
+        <a
+          href="https://www.linkedin.com/in/morten-bentsen-3a50a74"
+          target="_blank"
+          alt="LinkedIn profile"
+          ><img src="img/linkedin-inverted.png" width="50" height="50" />
+        </a>
+      </div>
+    </div>
+    <div class="footer">
+      <div>
+        Icons made by
+        <a
+          href="https://www.flaticon.com/authors/pixel-perfect"
+          title="Pixel perfect"
+          >Pixel perfect</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+    </div>
   </body>
 </html>
